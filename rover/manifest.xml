@@ -1,0 +1,10 @@
+<package>
+  <description brief="rover">Rover core onboard software</description>
+  <author>Chandra Boyle</author>
+  <license>BSD</license>
+  <url>http://github.com/boyler-room/UAA-URC-2018-2019</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+</package>
+
+

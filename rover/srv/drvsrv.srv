@@ -1,0 +1,18 @@
+uint16 R_DRV=0
+uint16 R_MOT=1
+uint16 R_PWR=2
+
+uint16 cmd
+---
+uint16 M_STOP=0
+uint16 M_DRV=1
+uint16 M_SIDE=2
+
+uint16 mode
+float32[] data
+#for R_DRV when mode is M_STOP, data is empty
+#for R_DRV when mode is M_DRV, data is [fwd velocity (m/s), turn radius (m)]
+#for R_DRV when mode is M_SIDE, data is [left ang velocity (rpm),right ang velocity (rpm)]
+#for R_DRV when mode is M_MOT, data is [front left, front right, back left, back right] in (rpm, +fwd motion)
+#for R_MOT, data is [front left, front right, back left, back right] in (rpm, +fwd motion)
+#for R_PWR, data is [left current (A), right current (A), left controller voltage (V), right controller voltage (V)]
